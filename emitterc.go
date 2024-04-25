@@ -1389,7 +1389,7 @@ func yaml_emitter_analyze_scalar(emitter *yaml_emitter_t, value []byte) bool {
 		emitter.scalar_data.block_plain_allowed = false
 		emitter.scalar_data.single_quoted_allowed = false
 	}
-	if space_break || special_characters {
+	if special_characters {
 		emitter.scalar_data.block_allowed = false
 	}
 	if line_breaks {
